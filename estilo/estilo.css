@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&display=swap');
+body{
+    background-color: white;
+    height: 2500px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.763) url('../imagens/pexels-nout-gons-378570-LEVE.jpg') center -105px no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header nav{
+    background-color: white;
+    height: 70px;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    left: 29%;
+    top: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 7px 4px #0000004f;
+}
+header nav  h1{
+    display: inline-block;
+    margin: 20px;
+}
+header nav>ul{
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.navegação{
+    color: rgba(0, 0, 0, 0.309);
+    display: inline-block;
+    margin-right: 5%;
+    text-decoration: none;
+    font-family: 'Karla',sans-serif;
+    font-weight: bold;
+}
+.navegação:hover{
+    color: black;
+    transition: 0.5s;
+}
+main{
+    width: 100%;
+}
+#primeira_parte{
+    background-color: hsl(208, 23%, 16%);
+    height: 500px;
+    width: 100%;
+   position: relative;
+
+}
+#primeira_parte h1{
+    display: inline-block;
+    margin: 5% 5% 0% 10%;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1em,2em + 2.3vw , 5em);
+    width: 32%;
+}
+#primeira_parte p{
+    display: block;
+    margin: 1% 5% 3% 10%;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 29%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: justify;
+}
+#primeira_parte picture{
+    position: absolute;
+    right: 0;
+    margin: 5% 2% 0% 10%;
+}
+#link_plans{
+    text-decoration: none;
+    margin-left: 10%;
+    padding: 10px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.761);
+    color: rgba(255, 255, 255, 0.789);
+    font-family: 'Karla',sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#link_plans:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+#somos_diferentes{
+    width: 100%;
+    height: 500px;
+    background:rgba(0, 0, 0, 0) url('../imagens/pexels-jagmeet-singh-1134857.jpg') center center no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#somos_diferentes>div{
+    background-color: hsla(208, 23%, 16%, 0.263);
+    width: 100%;
+    height: 100%;
+}
+#somos_diferentes h2{
+    text-align: center;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size:clamp(0.5em,2em + 2.5vw, 3em);
+    background-color: hsla(0, 0%, 44%, 0.55);
+    color: white;
+    position: absolute;
+}
+
+#segunda_parte > section{
+   width: 100%;
+}
+#segunda_parte section > div{
+    margin: 5% auto;
+    columns: 3;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 100px;
+}
+.ofertas_planos{
+    margin-right: 4%;
+}
+.ofertas_planos h2{
+    margin: 8% auto 5% auto;
+    font-size: 1.6em;
+}
+.ofertas_planos p{
+    color: hsla(256, 25%, 20%, 0.7);
+    text-align: justify;
+    letter-spacing: 0.5px;   
+    line-height: 20px; 
+}
+aside{
+    width: 100%;
+    height: 500px;
+    background: black url('../imagens/pexels-rodnae-productions-7821913-LEVE.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mais_sobre{
+    background-color: hsla(208, 23%, 16%, 0.605);
+    width: 93%;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    position: relative;
+}
+#mais_sobre h1{
+    line-height: 50px;
+    width: 70%;
+    display: inline-block;
+    font-size: clamp(1em,2em + 2.5vw , 4em);
+    margin: 4% auto auto 6%;}
+    #mais_sobre a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        color: white;
+        border: 1px solid white;
+        font: bold 0.9em 'Karla',sans-serif;
+        position: absolute;
+        top: 42%;
+        left: 75%;
+    }
+    #mais_sobre a:hover{
+        background-color: white;
+        color: black;
+        transition: 0.4s;
+    }
+    footer{
+        background-color: hsla(256, 25%, 20%, 0.063);
+        height: 400px;
+        position: relative;
+        width: 100%;
+        background: rgba(0, 0, 0, 0) url('../imagens/bg-pattern-footer-desktop.svg') left top no-repeat;
+    }
+    footer h1{
+        margin-top: 5%;
+        font: bold 1.5em 'Karla',sans-serif;
+        display: inline-block;
+        margin-left: 136px;
+    }
+    footer div{
+        display: inline-block;
+        left: 80%;
+        margin-top: 5%;
+        width: 140px;
+        position: absolute;
+    }
+    .icones_sociais{
+        margin-left: 5%;
+    }
+    .icones_sociais:hover{
+        filter: brightness(.4);
+    }
+    footer hr{
+        border: 1px solid hsla(256, 25%, 20%, 0.111);
+        max-width: 1140px;
+        min-width: 200px;
+        margin: 20px 0px 0px 136px;
+    }
+    footer ul{
+        columns: 4;
+        list-style: none;
+        margin-left: 136px;
+        margin-top: 3%;
+    }
+    footer ul > h3{
+        padding-bottom: 10px;
+        width: 150px;
+        display: inline-block;
+        margin-bottom: 5%;
+        color: hsla(256, 25%, 20%, 0.453);
+        font:  bold 1em 'Karla',sans-serif;
+    }
+    footer ul > a{
+        color: rgba(0, 0, 0, 0.652);
+        font:  bold 1em 'Karla',sans-serif;
+        letter-spacing: 1px;
+    }
+    footer ul a > li{
+        line-height: 30px;
+        width: 150px;
+    }
+    footer ul a:hover{
+        text-decoration: underline;
+    }
+    @media screen and (max-width:1095px){
+        #primeira_parte{
+            
+        }
+    }
