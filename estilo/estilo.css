@@ -23,31 +23,31 @@ header{
 header nav{
     background-color: white;
     height: 70px;
-    width: 70%;
+    width: 75%;
     position: absolute;
     right: 0;
-    left: 29%;
+    margin-right: 2%;
     top: 10%;
     border-radius: 10px;
     box-shadow: 0px 7px 4px #0000004f;
 }
 header nav  h1{
     display: inline-block;
-    margin: 20px;
+    margin: 20px 0px 10px 20px;
 }
 header nav>ul{
     display: inline-block;
     list-style: none;
     text-align: right;
-    width: 70%;
+    width: 100%;
     position: absolute;
     right: 0;
-    top: 30%;
+    top: 35%;
 }
 .navegação{
     color: rgba(0, 0, 0, 0.309);
     display: inline-block;
-    margin-right: 5%;
+    margin-right: 2%;
     text-decoration: none;
     font-family: 'Karla',sans-serif;
     font-weight: bold;
@@ -56,22 +56,26 @@ header nav>ul{
     color: black;
     transition: 0.5s;
 }
+.nav_int{
+    display: none;
+    background: hsl(258, 25%, 10%) url('../imagens/bg-pattern-mobile-nav.svg') right bottom no-repeat ;
+    background-size:contain;
+    height: 100%;
+}
 main{
     width: 100%;
 }
-#primeira_parte{
-    background-color: hsl(208, 23%, 16%);
-    height: 500px;
-    width: 100%;
-   position: relative;
-
+#primeira_parte {
+    height: 450px;
+      background-color: hsl(208, 23%, 16%);
+      width: 100%;
 }
 #primeira_parte h1{
     display: inline-block;
-    margin: 5% 5% 0% 10%;
+    margin: 2% 5% 0% 10%;
     color: white;
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(1em,2em + 2.3vw , 5em);
+    font-size: clamp(0.5em,1em + 3vw , 5em);
     width: 32%;
 }
 #primeira_parte p{
@@ -79,7 +83,7 @@ main{
     margin: 1% 5% 3% 10%;
     color: white;
     font-family: 'DM Serif Display', serif;
-    font-size: 1em;
+    font-size: clamp(0.4em,1em + 1vw,1em);
     font-weight: lighter;
     width: 29%;
     letter-spacing: 1px;
@@ -89,7 +93,7 @@ main{
 #primeira_parte picture{
     position: absolute;
     right: 0;
-    margin: 5% 2% 0% 10%;
+    margin: 0% 0% 5% 0%;
 }
 #link_plans{
     text-decoration: none;
@@ -122,25 +126,25 @@ main{
 }
 #somos_diferentes h2{
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
-    font-size:clamp(0.5em,2em + 2.5vw, 3em);
+    font-size:clamp(0.5em,1em + 2.5vw, 4em);
     background-color: hsla(0, 0%, 44%, 0.55);
     color: white;
     position: absolute;
+   
 }
-
 #segunda_parte > section{
    width: 100%;
 }
 #segunda_parte section > div{
-    margin: 5% auto;
+    margin: 5% auto 0% auto;
     columns: 3;
-    width: 80%;
-    height: 300px;
-    margin-bottom: 100px;
+    width: 90%;
+    height: 350px;
+    
 }
 .ofertas_planos{
     margin-right: 4%;
@@ -176,18 +180,19 @@ aside{
     line-height: 50px;
     width: 70%;
     display: inline-block;
-    font-size: clamp(1em,2em + 2.5vw , 4em);
-    margin: 4% auto auto 6%;}
+    font-size: clamp(1em,1.3em + 2.5vw , 4em);
+    margin: 2% auto auto 6%;}
     #mais_sobre a{
-        text-decoration: none;
         display: inline-block;
         padding: 10px 30px;
         color: white;
         border: 1px solid white;
         font: bold 0.9em 'Karla',sans-serif;
         position: absolute;
-        top: 42%;
-        left: 75%;
+        top: 50%;
+        right: 0;
+        transform: translate(0%,-50%);
+        margin-right: 4%;
     }
     #mais_sobre a:hover{
         background-color: white;
@@ -221,10 +226,10 @@ aside{
         filter: brightness(.4);
     }
     footer hr{
+        position: absolute;
         border: 1px solid hsla(256, 25%, 20%, 0.111);
-        max-width: 1140px;
-        min-width: 200px;
-        margin: 20px 0px 0px 136px;
+        width: 85%;
+        margin: 20px 0px 0px 9%;
     }
     footer ul{
         columns: 4;
@@ -252,8 +257,140 @@ aside{
     footer ul a:hover{
         text-decoration: underline;
     }
-    @media screen and (max-width:1095px){
+    @media screen and (max-width:1000px){
         #primeira_parte{
-            
+            height: 410px;
+        }
+        #primeira_parte h1{
+            margin-left: 5%;
+        }
+        #primeira_parte p {
+           margin-left: 5%;
+        }
+        #mais_sobre{
+            text-align: center;
+        }
+        #mais_sobre h1{
+            margin: 2% auto;
+            display: block;
+            width: 100%;
+        }
+        #mais_sobre a{
+            margin: 6% auto;
+            display: block;
+            width: 223px;
+            position: static;
+        }
+    }
+    @media screen and (max-width:825px){
+        #primeira_parte p{
+            width: 40%;
+        }
+        #primeira_parte picture{
+            margin: 5% 0% 0% 10%;
+        }
+        header nav > ul{
+            display: none;
+        }
+        #botão_fechar{
+            display: none;
+            content: url('../imagens/icon-close.svg');
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 90%;
+            top: 20px;
+            margin-left: 0%;
+        }
+       #botão_nav{
+            display: inline-block;
+            content: url('../imagens/icon-hamburger.svg');
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 90%;
+            top: 70px;
+            margin-left: 0%;
+       }
+       #botão_nav:hover{
+        filter: opacity(.7) brightness(.9) ;
+       }
+       .navegação{
+           display: block;
+           color: white;
+           font-size: 1.2em;
+           font-weight: lighter;
+           margin: 3% auto;
+       }
+       .navegação:hover{
+           color: hsl(256, 65%, 70%);
+       }
+        #segunda_parte section > div{
+            columns: 1;
+            height: 850px;
+            width: 50%;
+            text-align: center;
+        }
+        .ofertas_planos{
+            margin-top: 5%;
+        }
+        footer{
+            text-align: center;
+            height: 100%;
+        }
+        footer h1{
+            padding: 100px 0px 20px 0px;
+            display: block;
+            position: static;
+            margin:  5% auto 5% auto;
+            text-align: center;
+        }
+        footer div{
+            margin: 0% auto 5% auto;
+            display: block;
+            position: static;
+        }
+        footer hr{
+            margin: auto;
+            width: 80%;
+            margin-bottom: 10%;
+        }
+        footer ul{
+            display: inline;
+            margin: auto;
+            text-align: center;
+        }
+        footer ul > h3{
+            display:  block;
+            margin: 4% auto;
+        }
+        footer ul a > li{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:650px){
+        #primeira_parte{
+            text-align: center;
+            height: 600px;
+        }
+        #primeira_parte h1{
+            margin: 2% auto;
+            width: 100%;
+            font-size: 2.5em;
+        }
+        #primeira_parte p{
+            text-align: center;
+            width: 100%;
+            margin: 5% auto;
+        }
+        #primeira_parte picture{
+            position: static;
+            margin: 5% auto;
+        }
+        #link_plans{
+            margin: 5% auto;
+        }
+        #somos_diferentes h2{
+            width: 70%;
         }
     }
