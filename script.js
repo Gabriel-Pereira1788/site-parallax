@@ -3,7 +3,7 @@ var botão_fechar=document.querySelector('div#botão_fechar')
 var cabeçalho=document.querySelector('header#cabeçalho')
 var nav_mobile=document.querySelector('div.nav_int')
 function clicar(){
-    cabeçalho.style.height='400px'
+    cabeçalho.style.height='500px'
     nav_mobile.style.width='100%'
     nav_mobile.style.display='block'
     nav_mobile.style.content='normal'

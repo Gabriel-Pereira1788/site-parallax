@@ -80,8 +80,10 @@ header nav>ul{
     display: none;
     text-align: center;
     background: hsl(258, 25%, 10%) url('../imagens/bg-pattern-mobile-nav.svg') right bottom no-repeat ;
-    background-size:contain;
     height: 100%;
+}
+.nav_int ul{
+    margin-top: 5%;
 }
 main{
     width: 100%;
@@ -337,9 +339,9 @@ footer ul a:hover{
        .navegação{
            display: block;
            color: white;
-           font-size: 1.2em;
+           font-size: clamp(0.5em,1em + 2vh,2em);
            font-weight: lighter;
-           margin: 10% auto;
+           margin: 50px auto;
        }
        .navegação:hover{
            color: hsl(256, 65%, 70%);
