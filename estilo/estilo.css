@@ -158,6 +158,9 @@ main{
     color: white;
     position: absolute;
 }
+#somos_diferentes h2:hover{
+    background-color: rgba(141, 141, 141, 0.824);
+}
 #segunda_parte > section{
    width: 100%;
 }
@@ -273,7 +276,7 @@ footer ul > a{
     }
 footer ul a > li{
     line-height: 30px;
-    width: 100%;
+    width:63%;
     }
 footer ul a:hover{
     text-decoration: underline;
