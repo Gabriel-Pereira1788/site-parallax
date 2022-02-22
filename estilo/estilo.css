@@ -342,7 +342,7 @@ footer ul a:hover{
        .navegação{
            display: block;
            color: white;
-           font-size: clamp(0.5em,1em + 2vh,2em);
+           font-size: clamp(0.5em,1em + 1vh,2em);
            font-weight: lighter;
            margin: 50px auto;
        }
